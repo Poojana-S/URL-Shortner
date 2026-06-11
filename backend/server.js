@@ -4,7 +4,6 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/auth.routes.js";
 import urlRoutes from "./routes/url.routes.js";
-import redirectRoutes from "./routes/redirect.routes.js";
 import { errorHandler, notFound } from "./middleware/error.middleware.js";
 
 // Load environment variables
@@ -29,7 +28,6 @@ app.use(express.urlencoded({ extended: true }));
 // Mount auth and urls without the `/api` prefix so endpoints are like `/register`
 app.use("/", authRoutes);
 app.use("/urls", urlRoutes);
-app.use("/", redirectRoutes); // Short URL redirect (keep last among routes)
 
 // ─── Health Check ─────────────────────────────────────────────────────────────
 app.get("/health", (req, res) => {
