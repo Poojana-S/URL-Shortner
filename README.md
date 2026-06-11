@@ -180,7 +180,3 @@ Frontend runs at `http://localhost:5173` (or similar Vite default)
 Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
 
 ---
-
-## 📄 License
-
-[MIT](LICENSE)
