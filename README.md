@@ -63,8 +63,8 @@ URL-Shortener/
 ### Clone & Install
 
 ```bash
-git clone https://github.com/Poojana-S/URL-Shortner.git
-cd URL-Shortner
+git clone https://github.com/Poojana-S/URL-Shortner-S3-Deploy.git
+cd URL-Shortner-S3-Deploy
 ```
 
 #### Backend
@@ -110,8 +110,8 @@ Frontend runs at `http://localhost:5173` (or similar Vite default)
 3. Install Node.js and npm
 4. Clone the repo and install dependencies:
    ```bash
-   git clone https://github.com/Poojana-S/URL-Shortner.git
-   cd URL-Shortner/backend
+   git clone https://github.com/Poojana-S/URL-Shortner-S3-Deploy.git
+   cd URL-Shortner-S3-Deploy/backend
    npm install
    ```
 5. Set up your `.env` file with production values
@@ -157,9 +157,21 @@ Frontend runs at `http://localhost:5173` (or similar Vite default)
 
 ## 📸 Screenshots
 
-| Landing Page | Dashboard |
+### 🌐 Application
+
+| Home Page | Dashboard (My Links) |
 |---|---|
-| ![Landing](./screenshots/landing.png) | ![Dashboard](./screenshots/dashboard.png) |
+| ![Home Page](./Screenshots/Home Page.png) | ![Dashboard](./Screenshots/URL Shortner.png) |
+
+### ☁️ AWS Infrastructure
+
+| EC2 Instance (Backend) | S3 Bucket (Frontend) |
+|---|---|
+| ![EC2](./Screenshots/EC2 Instance.png) | ![S3](./Screenshots/S3 Bucket.png) |
+
+### ⚙️ Backend Running
+
+![Backend Connected](./Screenshots/Backend Connected.png)
 
 ---
 
