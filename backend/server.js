@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/auth.routes.js";
 import urlRoutes from "./routes/url.routes.js";
+import redirectRoutes from "./routes/redirect.routes.js";
 import { errorHandler, notFound } from "./middleware/error.middleware.js";
 
 // Load environment variables
@@ -33,6 +34,9 @@ app.use("/urls", urlRoutes);
 app.get("/health", (req, res) => {
   res.json({ status: "OK", message: "URL Shortener API is running" });
 });
+
+// Catch short URL redirects after all API routes
+app.use("/", redirectRoutes);
 
 // ─── Error Handlers ───────────────────────────────────────────────────────────
 app.use(notFound);
