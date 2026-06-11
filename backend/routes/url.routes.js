@@ -19,16 +19,16 @@ const router = express.Router();
 // All URL routes are protected
 router.use(protect);
 
-// GET  /api/urls/analytics/dashboard — must come BEFORE /:id
+// GET  /urls/analytics/dashboard — must come BEFORE /:id
 router.get("/analytics/dashboard", getDashboardAnalytics);
 
-// GET  /api/urls
-// POST /api/urls
+// GET  /urls
+// POST /urls
 router.route("/").get(getUserUrls).post(createUrlValidator, validate, createUrl);
 
-// GET    /api/urls/:id
-// PUT    /api/urls/:id
-// DELETE /api/urls/:id
+// GET    /urls/:id
+// PUT    /urls/:id
+// DELETE /urls/:id
 router
   .route("/:id")
   .get(getUrlById)

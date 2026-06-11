@@ -26,12 +26,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // ─── Routes ───────────────────────────────────────────────────────────────────
-app.use("/api/auth", authRoutes);
-app.use("/api/urls", urlRoutes);
+// Mount auth and urls without the `/api` prefix so endpoints are like `/register`
+app.use("/", authRoutes);
+app.use("/urls", urlRoutes);
 app.use("/", redirectRoutes); // Short URL redirect (keep last among routes)
 
 // ─── Health Check ─────────────────────────────────────────────────────────────
-app.get("/api/health", (req, res) => {
+app.get("/health", (req, res) => {
   res.json({ status: "OK", message: "URL Shortener API is running" });
 });
 

@@ -9,13 +9,13 @@ import {
 
 const router = express.Router();
 
-// POST /api/auth/register
+// POST /register
 router.post("/register", registerValidator, validate, register);
 
-// POST /api/auth/login
+// POST /login
 router.post("/login", loginValidator, validate, login);
 
-// GET /api/auth/me  (protected)
+// GET /me  (protected)
 router.get("/me", protect, getMe);
 
 export default router;
