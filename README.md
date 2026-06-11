@@ -161,17 +161,17 @@ Frontend runs at `http://localhost:5173` (or similar Vite default)
 
 | Home Page | Dashboard (My Links) |
 |---|---|
-| ![Home Page](./Screenshots/Home Page.png) | ![Dashboard](./Screenshots/URL Shortner.png) |
+| ![Home Page](./Screenshots/Home%20Page.png) | ![Dashboard](./Screenshots/URL%20Shortner.png) |
 
 ### ☁️ AWS Infrastructure
 
 | EC2 Instance (Backend) | S3 Bucket (Frontend) |
 |---|---|
-| ![EC2](./Screenshots/EC2 Instance.png) | ![S3](./Screenshots/S3 Bucket.png) |
+| ![EC2](./Screenshots/EC2%20Instance.png) | ![S3](./Screenshots/S3%20Bucket.png) |
 
 ### ⚙️ Backend Running
 
-![Backend Connected](./Screenshots/Backend Connected.png)
+![Backend Connected](./Screenshots/Backend%20Connected.png)
 
 ---
 
